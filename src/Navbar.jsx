@@ -1,34 +1,42 @@
 import React from 'react'
-// import Button from './Components/Button'
-import {Menu} from 'lucide-React';
+import {Contact, Rocket, Home, User, Wrench} from 'lucide-react';
 
 function Navbar() {
-  const navlinks = [
-    {href: '#about', label: 'About'},
-    {href: '#projects', label: 'Projects'},
-    {href: '#skills', label: 'Skills'},
-  ]
   return (
-    <header className='fixed object-cover top-0 left-0 right-0 bg-transparent py-5'>
-      <nav className='container mx-auto px-6 flex items-center justify-between'>
-        <a href='#' className='text-xl font-bold tracking-tight hover:text-black'></a>
-    <div className='hidden md:flex items-center gap-1'>
-      <div className='glass rounded-full px-2 py-1 flex bg-white/20 items-center gap-1'>
-        {navlinks.map((link, index) =>(
-          <a href={link.href} key={index} className='px-4 py-2 tex-sm text-white/70  hover:text-cyan-400 rounded-full'>
-            {link.label}
-          </a>
-        ))}
+      <div className="nav-bg flex space-x-4 py-2 items-center justify-center text-white  text-sm sm:text-normal rounded-2xl w-xs sm:font-medium fixed top-6 backdrop:blur-md z-50 left-1/2 transform -translate-x-1/2 px-4 sm:px-6 lg:px-8 bg-white/20 ">
+        <div
+          className="flex-row items-center justify-items-center hover:text-cyan-300 hover:cursor-pointer"
+        >
+          <Home size={15} className="home" />
+          <p>Home</p>
+        </div>
+        <div
+          className="flex-row items-center justify-items-center hover:text-cyan-300  hover:cursor-pointer"
+        >
+          <User size={15} className="about" />
+          <p>About</p>
+        </div>
+        <div
+          className="flex-row items-center justify-items-center hover:text-cyan-300  hover:cursor-pointer"
+        >
+          <Wrench size={15} className="skills" />
+          <p>Skills</p>
+        </div>
+        
+        <div
+          className="flex-row items-center justify-items-center hover:text-cyan-300 hover:cursor-pointer"
+
+        >
+          <Rocket size={15} className="projects" />
+          <p>Projects</p>
+        </div>
+        <div
+          className="flex-row items-center justify-items-center hover:text-cyan-300 hover:cursor-pointer"
+        >
+          <Contact size={15} className="contact" />
+          <p>Contact</p>
+        </div>
       </div>
-    </div>
-    <div className='hidden md:block'>
-      <button className=' rounded-full bg-white/20 hover:bg-blue-300/80 px-2 py-1 text-white/70'>Contact Me</button>
-    </div>
-    <button className='md:hidden p-2 text-white'>
-      <Menu size={24}/>
-    </button>
-      </nav>
-    </header>
   )
 }
 

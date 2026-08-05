@@ -1,85 +1,65 @@
 import React from 'react'
-import { Code, Database, Globe, Rocket } from "lucide-react";
 
 function AboutPage() {
   return (
      <section
       id="about"
-      className="bg-slate-950 text-white py-20 px-6 md:px-12 lg:px-20"
+      className="min-h-screen py-10 px-6 md:px-12 lg:px-24 text-white"
     >
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
-        
-        {/* Left Side */}
-        <div>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 leading-tight">
-             <span className="text-cyan-400">ABOUT ME</span>
+      <div className="max-w-7xl mx-auto">
+
+        <div className="text-center mb-16">
+          <h2 className="text-5xl font-bold mt-3">
+            About <span className="text-cyan-400">Me</span>
           </h2>
 
-          <p className="text-gray-400 mt-6 leading-8 text-lg">
-            I am a passionate Full Stack Developer specializing in the MERN
-            Stack (MongoDB, Express.js, React.js, and Node.js). I enjoy
-            transforming ideas into responsive, scalable, and user-friendly web
-            applications that deliver seamless user experiences.
-          </p>
-
-          <p className="text-gray-400 mt-5 leading-8 text-lg">
-            I have experience building modern web applications using React.js,
-            Tailwind CSS, JavaScript, Node.js, Express.js, and MongoDB. I love
-            writing clean, maintainable code and continuously learning new
-            technologies to improve my development skills.
-          </p>
-
-          <p className="text-gray-400 mt-5 leading-8 text-lg">
-            Recently, I developed projects including a <span className="text-cyan-400 font-semibold">Social Media Agent</span> powered by AI and an
-            interactive website inspired by the K72 platform using GSAP
-            animations. My goal is to contribute to impactful software products
-            while growing as a professional full stack developer.
-          </p>
-          <div>
-           <a href="/images/TusharResume neww.pdf"
-              target="_blank"
-              download="Tushar Resume.pdf">
-          <button className="mt-8 px-8 py-3 bg-cyan-500 hover:bg-cyan-600 rounded-lg font-semibold transition duration-300">
-            Download Resume 
-          </button>
-          </a>
-          </div>
+          <div className="w-28 h-1 bg-cyan-400 mx-auto mt-5 rounded-full"></div>
         </div>
 
-        {/* Right Side */}
-        <div className="grid grid-cols-2 gap-6">
-          <div className="bg-slate-900 p-6 rounded-2xl hover:scale-105 transition duration-300 border border-slate-800">
-            <Code className="text-cyan-400 mb-4" size={40} />
-            <h4 className="text-xl font-semibold">Frontend</h4>
-            <p className="text-gray-400 mt-2">
-              React.js, Tailwind CSS, JavaScript, HTML5, CSS3
-            </p>
-          </div>
+        <div className="gap-10 items-center">
 
-          <div className="bg-slate-900 p-6 rounded-2xl hover:scale-105 transition duration-300 border border-slate-800">
-            <Database className="text-cyan-400 mb-4" size={40} />
-            <h4 className="text-xl font-semibold">Backend</h4>
-            <p className="text-gray-400 mt-2">
-              Node.js, Express.js, MongoDB, REST APIs
-            </p>
-          </div>
+          {/* Left */}
+          <div className='text-center'>
 
-          <div className="bg-slate-900 p-6 rounded-2xl hover:scale-105 transition duration-300 border border-slate-800">
-            <Globe className="text-cyan-400 mb-4" size={40} />
-            <h4 className="text-xl font-semibold">Web Development</h4>
-            <p className="text-gray-400 mt-2">
-              Responsive Design, API Integration, Git & GitHub
-            </p>
-          </div>
+            <h3 className="text-4xl font-bold leading-tight">
+              Hi, I'm
+              <span className="text-cyan-400"> Tushar </span>
+            </h3>
 
-          <div className="bg-slate-900 p-6 rounded-2xl hover:scale-105 transition duration-300 border border-slate-800">
-            <Rocket className="text-cyan-400 mb-4" size={40} />
-            <h4 className="text-xl font-semibold">Goal</h4>
-            <p className="text-gray-400 mt-2">
-              Building scalable applications and continuously learning new
-              technologies.
+            <h4 className="text-2xl text-gray-300 mt-3">
+              Full Stack MERN Developer
+            </h4>
+
+            <p className="text-gray-300 leading-8 mt-8 text-lg">
+              I'm a passionate Full Stack Developer who enjoys building
+              responsive, scalable, and modern web applications.
+              I specialize in the MERN Stack and love transforming ideas
+              into interactive digital experiences.
             </p>
-          </div>
+
+            <p className="text-gray-300 leading-8 mt-6 text-lg">
+              My expertise includes React.js, Tailwind CSS, JavaScript,
+              Node.js, Express.js, MongoDB, REST APIs, and GSAP.
+              I focus on writing clean code, creating beautiful user
+              interfaces, and building applications that solve
+              real-world problems.
+            </p>
+
+            <p className="text-gray-300 leading-8 mt-6 text-lg">
+              I enjoy learning new technologies, exploring AI-powered
+              applications, and continuously improving my development
+              skills. My goal is to work on impactful software products
+              while growing as a professional Full Stack Developer.
+            </p>
+
+            <div className="buttons mt-10 flex flex-wrap gap-4 items-center justify-center">
+              <a href="/images/TusharResume neww.pdf" target="_blank" rel="noopener noreferrer">
+                <button className="px-6 py-3 bg-cyan-500 rounded-2xl   hover:bg-cyan-600 transition">
+                 Resume
+                </button>
+              </a>
+            </div>
+          </div> 
         </div>
       </div>
     </section>
