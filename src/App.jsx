@@ -1,4 +1,5 @@
 import React from 'react'
+import { Routes, Route } from "react-router-dom";
 import HeroSection from './Components/HeroSection'
 import AboutPage from './Components/AboutPage'
 import SkillSection from './Components/SkillSection'
@@ -10,6 +11,7 @@ import PixelSnow from './PixelSnow';
 
 function App() {
   return (
+    <>
      <div className=' relative text-white min-h-screen overflow-x-hidden bg-black'>
 <div className='fixed inset-0 pointer-events-none z-0'>
   <PixelSnow 
@@ -29,16 +31,26 @@ function App() {
 </div>
 <div className='relative z-10'>
       <Navbar />
-      <main>
-      <HeroSection />
-      <AboutPage />
-      <SkillSection />
-      <Projects />
-      <Contact />
-      </main>
+       <Routes>
+        <Route path='/' element={<main>
+          <section id='hero'> <HeroSection /> </section>
+          <section id='about'> <AboutPage /> </section>
+          <section id='skills'> <SkillSection /> </section>
+          <section id='projects'> <Projects /> </section>
+          <section id='contact'>  <Contact /> </section>
+            
+            </main>
+        }
+        />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/skills" element={<SkillSection />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
     </div>
     </div>
+    </>
   )
 }
 
