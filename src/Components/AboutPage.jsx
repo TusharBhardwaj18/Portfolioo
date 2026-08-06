@@ -8,12 +8,10 @@ function AboutPage() {
     >
       <div className="max-w-7xl mx-auto">
 
-        <div className="text-center mb-16">
-          <h2 className="text-5xl font-bold mt-3">
-            About <span className="text-cyan-400">Me</span>
+        <div className="text-center mb-10">
+          <h2 className="text-5xl sm:text-7xl  font-extrabold tracking-wider mb-8 z-10 text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-400">
+            About 
           </h2>
-
-          <div className="w-28 h-1 bg-cyan-400 mx-auto mt-5 rounded-full"></div>
         </div>
 
         <div className="gap-10 items-center">

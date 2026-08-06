@@ -37,8 +37,7 @@ function App() {
           <section id='about'> <AboutPage /> </section>
           <section id='skills'> <SkillSection /> </section>
           <section id='projects'> <Projects /> </section>
-          <section id='contact'>  <Contact /> </section>
-            
+          <section id='contact'>  <Contact /> </section>  
             </main>
         }
         />
