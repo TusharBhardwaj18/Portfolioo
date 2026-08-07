@@ -49,7 +49,7 @@ function Navbar() {
       <div onClick = {() => handleScroll("contact")}
        className="flex-row items-center justify-items-center hover:text-cyan-300 hover:cursor-pointer">
         <Contact size={15} className="contact" />
-   <span>Contact Me</span>
+   <span>Contact</span>
       </div>
     </div>
   );
