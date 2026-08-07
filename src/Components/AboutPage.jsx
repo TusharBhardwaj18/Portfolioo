@@ -16,6 +16,7 @@ function AboutPage() {
               Hi, I'm
               <span className="text-cyan-400"> Tushar </span>
             </h3>
+            <img src='/images/myimg.jpg' className='w-32 h-32 rounded-full object-cover border-2 border-cyan-500 shadow-xl shadow-cyan-400 '></img>
 
             <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-300 -mt-2">
               Full Stack  <span className="text-cyan-400"> MERN </span>Developer

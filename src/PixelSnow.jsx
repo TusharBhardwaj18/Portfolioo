@@ -244,14 +244,37 @@ export default function PixelSnow({
 
     const scene = new Scene();
     const camera = new OrthographicCamera(-1, 1, 1, -1, 0, 1);
-    const renderer = new WebGLRenderer({
-      antialias: false,
-      alpha: true,
-      premultipliedAlpha: false,
-      powerPreference: 'high-performance',
-      stencil: false,
-      depth: false
-    });
+    let renderer;
+    try{
+      renderer = new WebGLRenderer({
+        antialias: false,
+        alpha: true,
+        premultipliedAlpha: false,
+        powerPreference: 'high-performance',
+        stencil: false,
+        depth: false
+      });
+    }
+    catch (e) {
+      try{
+        renderer = new WebGLRenderer({
+          antialias: false,
+          alpha: true,
+          powerPreference: 'default',
+        });
+      } catch (err) {
+        console.warn("WebGL not supported on this device.", err);
+        return;
+      }
+    }
+    // const renderer = new WebGLRenderer({
+    //   antialias: false,
+    //   alpha: true,
+    //   premultipliedAlpha: false,
+    //   powerPreference: 'high-performance',
+    //   stencil: false,
+    //   depth: false
+    // });
 
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     renderer.setSize(container.offsetWidth, container.offsetHeight);

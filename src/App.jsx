@@ -12,7 +12,7 @@ import PixelSnow from './PixelSnow';
 function App() {
   return (
     <>
-     <div className=' relative text-white min-h-screen overflow-x-hidden bg-black'>
+     <div className='relative text-white min-h-screen overflow-x-hidden bg-black'>
 <div className='fixed inset-0 pointer-events-none z-0'>
   <PixelSnow 
     color="#ffffff"

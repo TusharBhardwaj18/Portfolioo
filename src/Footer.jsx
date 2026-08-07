@@ -25,7 +25,7 @@ function Footer() {
         </div>
             <div className="flex gap-1">
              
-            <p className="">© 2026 - Made by <span className="text-cyan-300">Tushar Bhardwaj</span>.</p>
+            <p className="">© 2026 - Made by <span className="text-cyan-300">Tushar Bhardwaj with ❤️</span></p>
             </div>
             <div className="">
                 <p>Built with ReactJs & TailwindCss.</p>
