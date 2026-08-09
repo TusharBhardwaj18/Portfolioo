@@ -1,5 +1,5 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom";
+import React, {useEffect} from 'react'
+import { Routes, Route, replace, useNavigate } from "react-router-dom";
 import HeroSection from './Components/HeroSection'
 import AboutPage from './Components/AboutPage'
 import SkillSection from './Components/SkillSection'
@@ -10,6 +10,17 @@ import Projects from './Components/Projects'
 import PixelSnow from './PixelSnow';
 
 function App() {
+  const navigate = useNavigate()
+  useEffect (() =>{
+    if('scrollRestoration' in window.history){
+      window.history.scrollRestoration = 'manual'
+    }
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+    navigate('/', { replace: true })
+  }, [navigate])
   return (
     <>
      <div className='relative text-white min-h-screen overflow-x-hidden bg-black'>

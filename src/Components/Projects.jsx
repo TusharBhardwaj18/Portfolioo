@@ -33,7 +33,7 @@ function Projects() {
             <p className="font-medium text-xs sm:text-sm mt-1 text-gray-300/60 text-center">
               Tech stack : <span className="font-color2">{project.stack}</span>
             </p>
-            <p className="description font-color2 text-xs sm:text-sm leading-relaxed mt-2.5 text-center">
+            <p className="description text-white/80 font-semibold text-xs sm:text-sm leading-relaxed mt-2.5 text-center">
               {project.description}
             </p>
             </div>

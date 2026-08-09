@@ -16,7 +16,7 @@ const ProjectList = [
     image: "/images/K72 project.png",
     stack: "ReactJs, Node.js, GSAP, TailwindCss",
     gitLink: "https://github.com/TusharBhardwaj18/k72-website-clone-",
-    liveLink: ".",
+    liveLink: "https://k72-website-clone-xn70.onrender.com/",
   },
   {    id: 3,
     name: "TribeLink",
