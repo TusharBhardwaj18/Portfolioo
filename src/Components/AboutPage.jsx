@@ -43,7 +43,7 @@ function AboutPage() {
             </p>
             </div>
             <div className="buttons mt-6 flex flex-wrap gap-4 items-center justify-center">
-              <a href="/images/TusharResume neww.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="/images/Tushar Resume newww.pdf" target="_blank" rel="noopener noreferrer">
                 <button className="px-5 sm:px-6 py-2.5 sm:py-3 text-white font-medium text-sm sm:text-base rounded-2xl hover:bg-cyan-600/80 transition-colors duration-200 cursor-pointer shadow-lg shadow-cyan-500/60">
                  Resume
                 </button>
